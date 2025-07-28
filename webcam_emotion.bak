@@ -1,0 +1,77 @@
+import cv2
+from deepface import DeepFace
+import datetime
+import json
+from collections import Counter
+
+# Initialize webcam
+cap = cv2.VideoCapture(0)
+
+print("[INFO] Starting webcam stream. Press 'q' to quit.")
+
+frame_count = 0
+batch_emotions = []
+final_results = []
+
+def get_majority_emotion(emotions):
+    if not emotions:
+        return None
+    count = Counter(emotions)
+    return count.most_common(1)[0][0]
+
+while True:
+    ret, frame = cap.read()
+    if not ret:
+        break
+
+    try:
+        result = DeepFace.analyze(
+            frame,
+            actions=['emotion'],
+            enforce_detection=True,
+            detector_backend='opencv'
+        )
+
+        result = [result] if not isinstance(result, list) else result
+        result.sort(key=lambda x: x['region']['w'] * x['region']['h'], reverse=True)
+        primary = result[0]
+        dominant_emotion = primary['dominant_emotion']
+        batch_emotions.append(dominant_emotion)
+        frame_count += 1
+
+        # Draw box and emotion
+        region = primary['region']
+        x, y, w, h = region['x'], region['y'], region['w'], region['h']
+        cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 255), 2)
+        cv2.putText(frame, f"Emotion: {dominant_emotion}", (x, y - 10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 0, 0), 2)
+
+        # Once 5 frames are collected
+        if frame_count == 5:
+            majority_emotion = get_majority_emotion(batch_emotions)
+            timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            final_results.append({
+                "timestamp": timestamp,
+                "majority_emotion": majority_emotion,
+                "individual_emotions": batch_emotions.copy()
+            })
+            print(f"[INFO] Logged at {timestamp}: {majority_emotion}")
+            batch_emotions.clear()
+            frame_count = 0
+
+    except Exception as e:
+        print("[Warning] Emotion detection failed:", e)
+
+    cv2.imshow("Interview Emotion Tracker (Batch Mode)", frame)
+
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+cap.release()
+cv2.destroyAllWindows()
+
+# Save results to JSON
+with open("emotion_log.json", "w") as f:
+    json.dump(final_results, f, indent=4)
+
+print("\n[INFO] Emotion log saved to emotion_log.json")

@@ -1,0 +1,277 @@
+[
+    {
+        "timestamp": "2025-07-25 15:58:03",
+        "majority_emotion": "fear",
+        "individual_emotions": [
+            "angry",
+            "fear",
+            "fear",
+            "neutral",
+            "neutral"
+        ]
+    },
+    {
+        "timestamp": "2025-07-25 15:58:04",
+        "majority_emotion": "neutral",
+        "individual_emotions": [
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral"
+        ]
+    },
+    {
+        "timestamp": "2025-07-25 15:58:05",
+        "majority_emotion": "neutral",
+        "individual_emotions": [
+            "neutral",
+            "neutral",
+            "neutral",
+            "happy",
+            "happy"
+        ]
+    },
+    {
+        "timestamp": "2025-07-25 15:58:06",
+        "majority_emotion": "happy",
+        "individual_emotions": [
+            "happy",
+            "happy",
+            "happy",
+            "happy",
+            "happy"
+        ]
+    },
+    {
+        "timestamp": "2025-07-25 15:58:07",
+        "majority_emotion": "surprise",
+        "individual_emotions": [
+            "neutral",
+            "neutral",
+            "surprise",
+            "surprise",
+            "surprise"
+        ]
+    },
+    {
+        "timestamp": "2025-07-25 15:58:08",
+        "majority_emotion": "angry",
+        "individual_emotions": [
+            "angry",
+            "angry",
+            "angry",
+            "angry",
+            "angry"
+        ]
+    },
+    {
+        "timestamp": "2025-07-25 15:58:08",
+        "majority_emotion": "angry",
+        "individual_emotions": [
+            "angry",
+            "angry",
+            "angry",
+            "fear",
+            "fear"
+        ]
+    },
+    {
+        "timestamp": "2025-07-25 15:58:09",
+        "majority_emotion": "angry",
+        "individual_emotions": [
+            "fear",
+            "angry",
+            "fear",
+            "angry",
+            "angry"
+        ]
+    },
+    {
+        "timestamp": "2025-07-25 15:58:10",
+        "majority_emotion": "disgust",
+        "individual_emotions": [
+            "disgust",
+            "angry",
+            "disgust",
+            "angry",
+            "disgust"
+        ]
+    },
+    {
+        "timestamp": "2025-07-25 15:58:11",
+        "majority_emotion": "neutral",
+        "individual_emotions": [
+            "fear",
+            "angry",
+            "neutral",
+            "neutral",
+            "neutral"
+        ]
+    },
+    {
+        "timestamp": "2025-07-25 15:58:12",
+        "majority_emotion": "neutral",
+        "individual_emotions": [
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral"
+        ]
+    },
+    {
+        "timestamp": "2025-07-25 15:58:13",
+        "majority_emotion": "neutral",
+        "individual_emotions": [
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral"
+        ]
+    },
+    {
+        "timestamp": "2025-07-25 15:58:14",
+        "majority_emotion": "neutral",
+        "individual_emotions": [
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral"
+        ]
+    },
+    {
+        "timestamp": "2025-07-25 15:58:15",
+        "majority_emotion": "neutral",
+        "individual_emotions": [
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral"
+        ]
+    },
+    {
+        "timestamp": "2025-07-25 15:58:15",
+        "majority_emotion": "neutral",
+        "individual_emotions": [
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral"
+        ]
+    },
+    {
+        "timestamp": "2025-07-25 15:58:16",
+        "majority_emotion": "neutral",
+        "individual_emotions": [
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral"
+        ]
+    },
+    {
+        "timestamp": "2025-07-25 15:58:17",
+        "majority_emotion": "neutral",
+        "individual_emotions": [
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral"
+        ]
+    },
+    {
+        "timestamp": "2025-07-25 15:58:18",
+        "majority_emotion": "neutral",
+        "individual_emotions": [
+            "neutral",
+            "neutral",
+            "neutral",
+            "fear",
+            "neutral"
+        ]
+    },
+    {
+        "timestamp": "2025-07-25 15:58:19",
+        "majority_emotion": "neutral",
+        "individual_emotions": [
+            "neutral",
+            "neutral",
+            "fear",
+            "neutral",
+            "neutral"
+        ]
+    },
+    {
+        "timestamp": "2025-07-25 15:58:20",
+        "majority_emotion": "sad",
+        "individual_emotions": [
+            "neutral",
+            "fear",
+            "sad",
+            "sad",
+            "sad"
+        ]
+    },
+    {
+        "timestamp": "2025-07-25 15:58:23",
+        "majority_emotion": "neutral",
+        "individual_emotions": [
+            "sad",
+            "neutral",
+            "neutral",
+            "angry",
+            "happy"
+        ]
+    },
+    {
+        "timestamp": "2025-07-25 15:58:24",
+        "majority_emotion": "neutral",
+        "individual_emotions": [
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral"
+        ]
+    },
+    {
+        "timestamp": "2025-07-25 15:58:25",
+        "majority_emotion": "neutral",
+        "individual_emotions": [
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral"
+        ]
+    },
+    {
+        "timestamp": "2025-07-25 15:58:26",
+        "majority_emotion": "neutral",
+        "individual_emotions": [
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral"
+        ]
+    },
+    {
+        "timestamp": "2025-07-25 15:58:26",
+        "majority_emotion": "neutral",
+        "individual_emotions": [
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral",
+            "neutral"
+        ]
+    }
+]

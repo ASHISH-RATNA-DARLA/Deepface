@@ -1,0 +1,19 @@
+name: deepface-env
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+
+dependencies:
+  - python=3.8
+  - pip
+  - numpy
+  - pandas
+  - opencv
+  - matplotlib
+  - tensorflow=2.9
+  - pytorch
+  - torchvision
+  - pip:
+      - deepface==0.0.79
+  

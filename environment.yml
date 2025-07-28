@@ -1,0 +1,13 @@
+name: deepface-emotion-env
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - fastapi
+  - uvicorn
+  - deepface
+  - opencv-python-headless
+  - numpy
+  - pip
+  - pip:
+      - python-multipart
